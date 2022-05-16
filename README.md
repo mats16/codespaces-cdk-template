@@ -14,6 +14,16 @@ aws configure sso --profile default
 aws sso login
 ```
 
+#### Configure `credential_process`
+
+** *Currently AWS CDK supports AWS SSO, so this configuration is not necessary.* **
+
+If tools does not support AWS SSO, you need to configure `credential_process`.
+
+```sh
+aws configure set credential_process aws-sso-credential-process --profile default
+```
+
 ### 3. Create new AWS CDK app
 
 ```bash
