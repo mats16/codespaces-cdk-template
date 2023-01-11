@@ -20,6 +20,8 @@
   "remoteUser": "node",
   "features": {
     "aws-cli": "latest",
-    "docker-in-docker": "latest"
+    "docker-from-docker": {
+      "version": "latest"
+    }
   }
 }
